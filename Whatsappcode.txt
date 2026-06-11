@@ -5,3 +5,5 @@ chat screen code
 last seen code
 
 attachments
+
+hiding the last seen
