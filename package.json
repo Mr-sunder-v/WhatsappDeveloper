@@ -1,0 +1,24 @@
+{
+  "name": "whatsappdeveloper",
+  "version": "1.0.0",
+  "description": "This is an sample repository helps to study the git",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mr-sunder-v/WhatsappDeveloper.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mr-sunder-v/WhatsappDeveloper/issues"
+  },
+  "homepage": "https://github.com/Mr-sunder-v/WhatsappDeveloper#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^26.1.1"
+  }
+}
