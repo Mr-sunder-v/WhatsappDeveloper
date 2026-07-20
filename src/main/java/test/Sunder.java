@@ -37,6 +37,8 @@ public class Sunder {
 
         // Optional: Print page title
         System.out.println("Page title after login: " + driver.getTitle());
+        
+        System.out.println("Sample added code for git");
 
         // Close browser
         driver.quit();
