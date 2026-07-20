@@ -1,0 +1,38 @@
+name: Selenium Maven Tests
+
+on:
+  push:
+    branches:
+      - selenium-framework
+
+jobs:
+  test:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      # Download the code from GitHub
+      - name: Checkout Repository
+        uses: actions/checkout@v5
+
+
+      # Install Java
+      - name: Setup Java
+        uses: actions/setup-java@v5
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: maven
+
+
+      # Verify Java and Maven versions (optional but useful)
+      - name: Check Java and Maven Version
+        run: |
+          java -version
+          mvn -version
+
+
+      # Run Selenium Test Cases
+      - name: Run Maven Tests
+        run: mvn clean test
